@@ -42,6 +42,9 @@ async def read_root():
 async def gpt_query(query: str):
     messages = []
 
+    if query == "":
+        return {"response": "Error: Empty query. Please provide a valid query."}
+
     for question, answer in previous_messages:
         messages.append({"role": "user", "content": question})
         messages.append({"role": "assistant", "content": answer})
