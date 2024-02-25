@@ -18,7 +18,7 @@ This is not an application and is designed to be integrated with another app
 - Create a .env file based on the dotenv_example
 
 ### Run
-- `python ./main.py`\
+- `python ./main.py`
 - Access API with localhost:5000
 
 ### Unit Tests
