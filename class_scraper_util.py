@@ -35,7 +35,7 @@ url_list = [
     "https://catalog.sjsu.edu/content.php?filter%5B27%5D=TECH&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=14&expand=&navoid=5106&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
 ]
 
-# TODO Implement topology sort to determine prerequisites and corequisites
+# TODO Implement topological sort to determine prerequisites and corequisites
 # TODO Implement a way to convert JSON to ClassNode objects
 class ClassNode:
     def __init__(
