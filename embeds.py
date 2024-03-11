@@ -17,7 +17,7 @@ df = pd.read_json(file)
 df = df[["title","units","description","prereqs","coreqs","grading_type","note"]]
 df = df.dropna()
 df["combined"] = (
-    "Title: " + df.title.str.strip() + "; description: " + df.description.str.strip()
+    "Title: " + df.title.str.strip() + "; description: " + df.description.str.strip() + "; units: " + df.units.str.strip() + "; prereqs: " + df.prereqs.str.strip() + "; coreqs: " + df.coreqs.str.strip() + "; grading_type: " + df.grading_type.str.strip()
 )
 df.head(2)
 
