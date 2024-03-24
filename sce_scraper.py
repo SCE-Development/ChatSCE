@@ -81,5 +81,5 @@ scraper.scrape_projects()
 nodes = scraper.extract_project_info()
 for node in nodes:
     print(node.to_string())
-with open("../../Library/Mobile Documents/.Trash/ChatSCE/proj_output.json", "w") as f:
+with open("proj_output.json", "w") as f:
     json.dump([node.__dict__ for node in nodes], f, indent=4)
